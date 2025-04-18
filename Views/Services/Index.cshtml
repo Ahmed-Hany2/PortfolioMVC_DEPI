@@ -1,0 +1,25 @@
+﻿@model My_Portfolio_DEPI.ViewModels.ServicesViewModel
+@{
+}
+
+<div id="services" class="our-services insider-container">
+    <div class="container our-services-content ">
+        <h2>My Services</h2>
+        <hr color="#FF305B" width="50px" />
+        <hr color="#FF305B" width="150px" />
+        <hr color="#FF305B" width="50px" />
+        <div class="services-list">
+            @foreach (var service in Model.Services)
+            {
+                <div class="service">
+                    <i class="@service.iconCode"></i>
+                    <h3>@service.serviceName</h3>
+                    <p>
+                        @service.serviceDescription
+                    </p>
+                </div>
+            }
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>

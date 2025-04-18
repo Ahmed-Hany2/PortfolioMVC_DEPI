@@ -1,0 +1,67 @@
+﻿@model My_Portfolio_DEPI.ViewModels.AboutViewModel
+@{
+}
+<div id="about" class="about container insider-container">
+    <div class="about-box">
+        <div class="about-photo">
+            <div class="photo-itself">
+                <img src="./images/about/my-photo.jpg" alt="about" />
+                <div class="profile-overlay">
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://google.com" target="_blank">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-paragraph">
+        <h2>HELLO,</h2>
+        <p>@Model.AboutInfo.Summary</p>
+        <ul>
+            <li>
+                <span>Name:</span>
+                @Model.AboutInfo.Name
+            </li>
+            <li>
+                <span>Job Title:</span>
+                @Model.AboutInfo.JobTitle
+            </li>
+            <li>
+                <span>Age:</span>
+                @Model.AboutInfo.Age Years
+            </li>
+            <li>
+                <span>Location:</span>
+                @Model.AboutInfo.Location
+            </li>
+            <li>
+                <span>Freelance:</span>
+                @Model.AboutInfo.Freelance
+            </li>
+            <li>
+                <span>E-mail:</span>
+                @Model.AboutInfo.Email
+            </li>
+        </ul>
+
+        <button>
+            Download CV
+            <i class="fa-solid fa-download"></i>
+        </button>
+        <button>
+            Hire Me
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </div>
+</div>

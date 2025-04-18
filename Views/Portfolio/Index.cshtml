@@ -1,0 +1,23 @@
+﻿@model My_Portfolio_DEPI.ViewModels.PortfolioViewModel
+@{
+}
+
+
+<div id="portfolio" class="our-portfolio container insider-container">
+    <h2>My Portfolio</h2>
+    <hr color="#FF305B" width="50px" />
+    <hr color="#FF305B" width="150px" />
+    <hr color="#FF305B" width="50px" />
+    <div class="products">
+        @foreach (var item in Model.PortfolioItems)
+        {
+            <div class="product">
+                <img src="@item.imgURL" />
+                <div class="product-overlay">
+                    <i class="@item.iconCode"></i>
+                </div>
+            </div>
+        }
+        <div class="clear"></div>
+    </div>
+</div>
